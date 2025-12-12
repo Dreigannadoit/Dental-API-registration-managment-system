@@ -9,7 +9,7 @@ const app = express();
 
 // Simple CORS for development
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'http://localhost:5173' || mport.meta.env.CLIENT_URL,
   credentials: true
 }));
 
